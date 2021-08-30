@@ -19,7 +19,7 @@ const Planets: Planets = {
 class SpaceAge {
     constructor(public readonly seconds: number) {
         for (const planet in Planets) {
-            this[`on${planet}`] = () => this.rotation(<any>Planets[planet])
+            this[`on${planet}`] = () => this.rotation(Planets[planet])
         }
     }
 
