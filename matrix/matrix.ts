@@ -3,7 +3,7 @@ class Matrix {
 
   rows: Array2D
   columns: Array2D
-  constructor(matrixString: string) {
+  constructor(readonly matrixString: string) {
     this.rows = matrixString
       .split("\n")
       .map( (rowString) => 
